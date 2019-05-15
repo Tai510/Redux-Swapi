@@ -9,22 +9,25 @@ const initialState = {
 export const charsReducer = (state = initialState, action) => {
   switch (action.type) {
     case  FETCH_CHAR_START:
+    console.log('hi')
     return {
       ...state,
       isFetching: true,
       error: ''
     };
     case FETCH_CHAR_SUCCESS:
+    console.log('dfdf')
     return {
-      ...state,
-      isFetching: false,
-      error: '',
-      charDisplay: action.payload
+      // ...state,
+      // isFetching: false,
+      // error: '',
+      // charDisplay: action.payload
+      ...state, characters: [...action.payload], fetching: false 
     };
     case FETCH_CHAR_FAILURE:
+    console.log('dfd')
       return {
         ...state,
-        isFetching: false,
         error: action.payload
       };
     // Fill me in with the important reducers

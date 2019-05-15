@@ -9,9 +9,9 @@ export const FETCH_CHAR_FAILURE = 'ETCH_CHAR_FAILURE';
 export const getChar = () => dispatch => {
     dispatch({ type: FETCH_CHAR_START });
     axios
-    .get('https://swapi.co/api/people')
+    .get('https://swapi.co/api/people/')
     .then(res => {
-        dispatch({ type: FETCH_CHAR_SUCCESS, payload: res.data })
+        dispatch({ type: FETCH_CHAR_SUCCESS, payload: res.data.results })
     })
     .catch(err => {
         console.log(err.response);
