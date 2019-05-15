@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background-image: url('https://images3.alphacoders.com/708/thumb-1920-70887.jpg');
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -25,4 +29,28 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.nameList {
+  font-family: 'Baloo Bhai', cursive;
+  color: white;
+}
+
+.starlist {
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+  margin-left: 560px;
+  padding-right: 35px;
+  margin-top: 50px;
+  background-image: url('https://i.pinimg.com/736x/5a/5f/8f/5a5f8f89777173e818d37df7374a9877--star-wars-clone-wars-star-wars-rebels.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.starlist h1 {
+  padding-left: 45px;
+  font-family: 'Baloo Bhai', cursive;
+  color: white;
 }
